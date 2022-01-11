@@ -41,13 +41,18 @@
          </div>
         </div>
           <div class="header_inner">
+             <button class="menu_open">
+                <span></span>
+             </button>
              <div class="container">
-              <img src="/assets/images/logo.png" alt="">
+              <img class="MobileLogo" src="/assets/images/MobileLogo.svg" alt="">
+              <img class="logoHead" src="/assets/images/MainLogo.svg" alt="">
               <div class="header_buttons">
                  <div class="social_buttons">
                         <img class="imgsocial" src="assets/images/VKlogo.svg" alt="">
                         <img class="imgsocial" src="assets/images/YTlogo.svg" alt="">
                         <img class="imgsocial" src="assets/images/instagramlogo.svg" alt="">
+                        <img class="imgphone" src="assets/images/phone.svg" alt="">
                  </div>
                   <div class="head_buttons"> 
                    <button class="CallButton">Заказать звонок</button>
@@ -56,6 +61,47 @@
               </div>
             </div>
           </div>
+          <div class="burger_menu">
+                    <ul class="burger_list">
+                        <li>Компания</li>
+                        <li>Видеоблог</li>
+                        <li>Выполненные проекты</li>
+                        <li>Бетон</li>
+                        <li>Аренда бетононасосов</li>
+                        <li>Лаборатория</li>
+                        <li>Отзывы</li>
+                        <li>Контакты</li>
+                    </ul>
+                    <div class="footer_phone1">
+                            <div class="footer_phone">
+                                <div class="phone1" id="ph1">
+                                    <img src="assets/images/phone.svg" alt="">
+                                    <p>+7 (342) 203-06-88
+                                    <br>Завод в Перми</p>
+                                </div>
+                                <div class="phone1" id="ph2">
+                                        <img src="assets/images/phone.svg" alt="">
+                                        <p>+7 (342) 203-06-88
+                                        <br>Завод в Перми</p>
+                                </div>
+                                <div class="phone1" id="ph3">
+                                    <img src="assets/images/phone.svg" alt="">
+                                    <p>+7 (342) 203-06-88
+                                    <br>Завод в Перми</p>
+                                </div>
+                                 <hr>
+                                <div class="mail_menu">
+                                 <img src="assets/images/message1.svg" alt=""> <p>vegabeton@mail.ru</p>
+                                </div>
+                                 <hr>
+                                <div class="social_buttons2">
+                                    <img src="assets/images/VKlogo.svg" alt="">
+                                    <img src="assets/images/YTlogo.svg" alt="">
+                                    <img src="assets/images/instagramlogo.svg" alt="">
+                                </div>
+                            </div>
+                    </div>
+                </div>
           <div class="hader_navigate">
            <div class="container">
             <div class="header_nav">
@@ -78,8 +124,7 @@
           <div class="container">
            <div class="intro_content">
                 <div class="intro_h1">
-                    <h1 class="intro_H1Gradient">Превосходим</h1>
-                    <h1>ожидания!</h1>
+                    <h1><span class="intro_H1Gradient">Превосходим</span> ожидания!</h1>
                 </div>
                 <div class="intro_text">
                     Бетон с запасом по прочности до 30% от заявленного класса
@@ -138,14 +183,16 @@
         </div>
         </div>
     </div>
-    <div class="container">
-        <div class="BetonInStock">
-        <h2>Бетон в наличии</h2>
-        <div class="BetonMaterial">
-           <img class="graviy" src="assets/images/graviy.png" alt="">
-           <img src="assets/images/sheben.png" alt="">
-           <img src="assets/images/melkozer.png" alt="">
-        </div>
+    <div class="beton">
+        <div class="container">
+            <div class="BetonInStock">
+            <h2>Бетон в наличии</h2>
+            <div class="BetonMaterial">
+               <img class="graviy" src="assets/images/graviy.png" alt="">
+               <img src="assets/images/sheben.png" alt="">
+               <img src="assets/images/melkozer.png" alt="">
+            </div>
+            </div>
         </div>
     </div>
     <div class="video">
@@ -246,6 +293,7 @@
     
     <div class="footer-section">
         <div class="container">
+         <div class="footmain">
           <div class="FootermainBackground">
                   <div class="FooterMainContent">
                      <div class="container">
@@ -316,7 +364,7 @@
                 </div>
             </div>
             </div>
-           
+        </div>
         </div>  
     </div>
     <div class="FooterAmadoBackground">
@@ -327,5 +375,8 @@
                   </div>
                 </div>
               </div>
+              
+              <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
+              <script src="js/main.js"></script>
         </body>
 </html>
