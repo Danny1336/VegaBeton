@@ -56,6 +56,11 @@ h1,h2,h3,h4,h5,h6{
 }
 
 /*Header inner*/
+.headerElements{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
 .imgphone{
     display: none;
 }
@@ -194,13 +199,15 @@ h1,h2,h3,h4,h5,h6{
     background: #EBEBEB;
 }
 .performance{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 258px;
     width: 100%;
     font-weight: 300;
     font-size: 16px;
+}
+.performance>.container{
+    height: 258px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 .perf_h1{
     margin-right: 10px;
@@ -257,14 +264,48 @@ h1,h2,h3,h4,h5,h6{
     height: 592px;
 }
 .BetonMaterial{
+    color: white;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 30px;
     padding-top: 45px;
     display: flex;
     justify-content: space-between;
 
 }
-.BetonMaterial>img{
+.Materialtext{
+    margin-left: 25px;
+    margin-bottom: 40px;
+}
+.Materialtext>h1{
+    height: 70px;
+}
+.materialBeton3{
+       width: 400px;
+    height: 269px;
+    background: url("../assets/images/Material3.png")center
+        no-repeat;
+    background-size: cover; 
+    display: grid;
+    align-items: end;
+}
+.materialBeton1{
     width: 400px;
-    height: 250px;
+    height: 269px;
+    background: url("../assets/images/Material1.png")center
+        no-repeat;
+    background-size: cover; 
+    display: grid;
+    align-items: end;
+}
+.materialBeton2{
+     width: 400px;
+    height: 269px;
+    background: url("../assets/images/Material2.png")center
+        no-repeat;
+    background-size: cover; 
+    display: grid;
+    align-items: end;  
 }
 
 /* Video */
@@ -373,13 +414,13 @@ h1,h2,h3,h4,h5,h6{
 
 /* Works */
 .worksbackground{
+    height: 1000px;
     width: 100%;
     background: #1E242B;
 }
 .worksbackground>.container{
    display: flex;
    align-items: center;
-   height: 1276px;
 }
 .workscontent{
     font-weight: 500;
@@ -391,12 +432,8 @@ h1,h2,h3,h4,h5,h6{
     justify-content: space-between;
 }
 .img1{
-    height: 295px;
     display: flex;
     justify-content: space-between;
-}
-.img2{
-    height: 295px;
 }
 .worksText{
     margin-bottom: 65px;
@@ -604,7 +641,9 @@ ul.footnav a{
     .workimg22{
         display: none;
     }
-
+.button{
+    display: none;
+}
 /* Adaptation */
 @media screen and (max-width: 1199px){
     .container{
@@ -634,13 +673,6 @@ ul.footnav a{
         display: flex;
         flex-wrap: wrap;
     }
-    .BetonMaterial>.graviy{
-        width: 100%;
-        margin-bottom: 15px;
-    }
-    .BetonMaterial>img{
-        width: 49%;
-    }
     .betonVega{
         margin: auto;
         width: 90%;
@@ -667,6 +699,14 @@ ul.footnav a{
     .container{
         width: 760px;
     }
+    #button1{
+        display: none;
+    }
+    .button{
+        display: block;
+        text-align: center;
+        margin-top: 40px;
+    }
     /* Баннер */
     .intro {
         background: #1D252C url(../assets/images/introimage.png) top no-repeat;
@@ -679,6 +719,27 @@ ul.footnav a{
     }
     .intro_h1,.intro_text, .intro_buttons{
         margin-left: 25px;
+    }
+    /* materials */
+    .Beton_text{
+        height: 750px;
+    }
+    .BetonInStock{
+        width: 90%;
+        height: 800px;
+    }
+    .BetonMaterial{
+        flex-wrap: wrap;
+    }
+    .Materialtext{
+        font-size: 20px;
+    }
+    .materialBeton1{
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    .materialBeton2, .materialBeton3{
+        width: 48%;
     }
     /* burger */
     .phone1{
@@ -743,6 +804,7 @@ ul.footnav a{
         font-size: 18px;
         position: fixed;
         left: 0;
+        top: 80px;
         width: 60%;
         height: 750px;
         background: white;
@@ -787,22 +849,7 @@ ul.footnav a{
     }
     .perf_group{
         width: 25%;
-        height: 50%;
-    }
-    /* beton */
-    .Beton_text{
-        height: 750px;
-    }
-    .BetonInStock{
-        width: 90%;
-        height: 700px;
-    }
-    .BetonMaterial>.graviy{
-        width: 100%;
-        margin-bottom: 15px;
-    }
-    .BetonMaterial>img{
-        width: 49%;
+        height: 70%;
     }
     /* News */
     .newsContent{
@@ -840,8 +887,6 @@ ul.footnav a{
     .header_inner{
         margin-top: -80;
         width: 100%;
-        position: fixed;
-        top: 0;
         background: white;
         z-index: 10;
     }
@@ -850,10 +895,19 @@ ul.footnav a{
     .container{
         width: 360px;
     }
-      .social_buttons2>img{
-        display: block;
-        width: 40px;
-        margin-right: 10px;
+    .header{
+        position: fixed;
+        top: 0;
+        left: 0;
+    }
+    .burger_menu{
+        width: 320px;
+    }
+    .header_inner{
+        width: 100%;
+    }
+    .header_inner>.container{
+       margin: auto;
     }
     .imgsocial{
         display: none;
@@ -861,7 +915,7 @@ ul.footnav a{
     .header_inner>.container{
         margin: 0;
     }
-    .intro_h1{
+        .intro_h1{
         font-size: 16px;
     }
     .intro_text{
@@ -871,24 +925,28 @@ ul.footnav a{
         display: block;
     }
     .buttonTransperent{
-        margin: 0;  
-        margin-top: 10px;
+        margin-left: 0;
+         margin-top: 10px;
+    }
+    .introbackground>.container{
+        margin:0;
     }
     .performance_background{
         height: 600px;
     }
-    .performance{
+    .performance_background>.container{
+        margin-left: 10px;
+        display: flex;
+        align-items: center;
+    }
+    .performance>.container{
         display: block;
+        height: 0%;
     }
     .perf_group{
-        width: 50%;
+        margin: 0;
+        width: 90%;
         height: 80%;
-    }
-    .betonVega,.betonPostavki{
-        height: 100%;
-    }
-    .beton{
-        height: 900px;
     }
     .Beton_text>.container{
         margin-top: 50px;
@@ -898,10 +956,19 @@ ul.footnav a{
         font-weight: 300;
         font-size: 16px;
     }
-    .BetonMaterial>img, .graviy{
+    .betonVega,.betonPostavki{
+        height: 100%;
+    }
+    .beton{
+        height: 900px;
+    }
+    .BetonMaterial{
+        display: block;
+    }
+    .materialBeton1, .materialBeton2, .materialBeton3{
         width: 328px;
         height: 220px;
-        margin-top: 15px;
+        margin-bottom: 15px;
     }
     .newsImages, .newsImages2{
         display: block;
@@ -914,34 +981,40 @@ ul.footnav a{
     .blockone{
         display: none;
     }
-    .workimg22{
-        display: block;
-    }
-    .img1>img, .img2>img, .workimg5{
-        width: 50%;
-        height: 100%;
-        margin-top: 20px;
-    }
-    .workimg3, .img2{
-        display: none;
-    }
     .img1{
         display: block;
     }
-    .worksbackground{
-        height: 1300px;
+    .img1>img, .workimg5{
+        width: 328px;
+        height: 328px;
+        margin-bottom: 15px;
     }
     .worksbackground>.container{
-        display: block;
+        padding-top: 15px;
+        height: 0%;
+    }
+    .img2>img{
+        margin: 0;
+        width: 328px;
+        height: 328px;
+    }
+    .blocktwo>.img2{
+        margin-bottom: 15px;
+    }
+    .worksbackground{
+        height: 1400px;
     }
     .workscontent{
-        height: 500px;
+        height: 100%;
     }
-    .mapH1{
-        font-size: 18px;
+    .worksImages{
+       width: 328px;
     }
-    .footer-section>.container{
-        margin-left: 0;
+    .button{
+        margin-top: 10px;
+    }
+     .footer-section>.container{
+        margin-left: 20px;
         display: block;
     }
     .FooterMainContent>.container{
@@ -970,9 +1043,9 @@ ul.footnav a{
     .footerSocial{
         margin-top: 60px;
     }
-    .header_inner{
-        display: flex;
-        justify-content: flex-start;
-        width: 100%;
+    .mapH1{
+        height: 50px;
+        margin-top: 30px;
+        font-size: 16px;
     }
 }
