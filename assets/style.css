@@ -7,6 +7,9 @@ body{
     color: black;
     line-height: 1.5;
 }
+button{
+    cursor: pointer;
+}
 img{
     margin: 0;
     padding: 0;
@@ -91,6 +94,7 @@ h1,h2,h3,h4,h5,h6{
     margin: 0 7.5px;
 }
 .social_buttons{
+    cursor: pointer;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -281,6 +285,7 @@ h1,h2,h3,h4,h5,h6{
     height: 70px;
 }
 .materialBeton3{
+    cursor: pointer;
        width: 400px;
     height: 269px;
     background: url("../assets/images/Material3.png")center
@@ -290,6 +295,7 @@ h1,h2,h3,h4,h5,h6{
     align-items: end;
 }
 .materialBeton1{
+    cursor: pointer;
     width: 400px;
     height: 269px;
     background: url("../assets/images/Material1.png")center
@@ -299,6 +305,7 @@ h1,h2,h3,h4,h5,h6{
     align-items: end;
 }
 .materialBeton2{
+    cursor: pointer;
      width: 400px;
     height: 269px;
     background: url("../assets/images/Material2.png")center
@@ -373,6 +380,7 @@ h1,h2,h3,h4,h5,h6{
 }
 /* News Images */
 .bigImage{
+    cursor: pointer;
     margin: 0 11px 0  0;
     width: 615px;
     height: 615px;
@@ -383,6 +391,7 @@ h1,h2,h3,h4,h5,h6{
     align-items: end;
 }
 .small1{
+    cursor: pointer;
     margin-bottom: 26px;
     width: 615px;
     height: 295px;
@@ -393,6 +402,7 @@ h1,h2,h3,h4,h5,h6{
     align-items: end;
 }
 .small2_1{
+    cursor: pointer;
     width: 295px;
     height: 295px;
     background: url("../assets/images/New3.png")center
@@ -402,6 +412,7 @@ h1,h2,h3,h4,h5,h6{
     align-items: end;
 }
 .small2_2{
+    cursor: pointer;
     width: 295px;
     height: 295px;
      background: url("../assets/images/New4.png")center
@@ -435,6 +446,9 @@ h1,h2,h3,h4,h5,h6{
     display: flex;
     justify-content: space-between;
 }
+.img1>img{  
+    cursor: pointer;
+}
 .worksText{
     margin-bottom: 65px;
     display: flex;
@@ -455,9 +469,11 @@ h1,h2,h3,h4,h5,h6{
 }
 /* Works Images */
 .blockone>.img2{
+    cursor: pointer;
     margin-top: 25px;
 }
 .blocktwo>.img2{
+    cursor: pointer;
     margin-bottom: 25px;
 }
 .blockone{
@@ -536,7 +552,8 @@ h1,h2,h3,h4,h5,h6{
     justify-content: space-between;
 }
 .socicon>img{
-    margin: 0 10px;
+    cursor: pointer;
+    margin-right: 15px;
 }
 .numberbug{
      margin: auto;
@@ -742,6 +759,11 @@ ul.footnav a{
         width: 48%;
     }
     /* burger */
+    .burger_list li:hover {
+        background-color: #0754A6;
+        color: white;
+        width: 100%;
+        }
     .phone1{
         display: flex;
         align-items: center;
@@ -754,8 +776,13 @@ ul.footnav a{
     .footer_phone hr{
         margin-right: 30px;
     }
+    .burger_list{
+        list-style:none;
+        padding: 0;
+    }
     .burger_list li{
         height: 40px;
+        padding-left: 20px;
     }
     .footer_phone>.social_buttons2{
         display: flex;
@@ -894,6 +921,14 @@ ul.footnav a{
 @media screen and (max-width: 425px){
     .container{
         width: 360px;
+    }
+   .social_buttons2>img{
+        display: block;
+       width: 45px;
+       margin-right: 15px;
+    }
+    .imgphone{
+        margin-right: 80px;
     }
     .header{
         position: fixed;
