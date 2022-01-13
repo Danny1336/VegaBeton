@@ -27,6 +27,9 @@ h1,h2,h3,h4,h5,h6{
     width: 1254px;
     margin: auto;
 }
+#containall{
+    display: none;
+}
 /*Header info*/
 .header_infoBackground{
     background: #F2F2F2;
@@ -201,17 +204,19 @@ h1,h2,h3,h4,h5,h6{
     width: 100%;
     height: 258px;
     background: #EBEBEB;
+   display: flex;
+    justify-content: center;
+}
+.performance_background>.container{
+    display: flex;
+    align-items: center;
 }
 .performance{
     width: 100%;
     font-weight: 300;
     font-size: 16px;
-}
-.performance>.container{
-    height: 258px;
     display: flex;
     justify-content: space-between;
-    align-items: center;
 }
 .perf_h1{
     margin-right: 10px;
@@ -229,7 +234,7 @@ h1,h2,h3,h4,h5,h6{
 }
 .perf_group{
     width: 250px;
-    height: 127px;
+    height: 157px;
 }
 .perf>img{
 }
@@ -587,7 +592,6 @@ h1,h2,h3,h4,h5,h6{
 .number{
     margin: auto;
     width: 190px;
-    height: 41px;
     display: flex;
     margin-top: 50px;
 }
@@ -602,10 +606,7 @@ h1,h2,h3,h4,h5,h6{
     margin-top: 20px;
     margin-bottom: 27px;
 }
-.footnav{
-    width: 224px;
-    height: 162px;
-}
+
  ul.footnav{
     list-style: none;
 }
@@ -719,6 +720,13 @@ ul.footnav a{
     #button1{
         display: none;
     }
+    .presentVega{
+        margin-bottom: 120px;
+        margin-left: 40px
+    }
+    .worksbackground{
+        height: 1700px;
+    }
     .button{
         display: block;
         text-align: center;
@@ -800,6 +808,7 @@ ul.footnav a{
         display: block;     
         height: 80px;
         width: 88px;
+        border: none;
         background-color: rgba(7, 84, 166, 1);
         z-index: 6;
     }
@@ -875,7 +884,7 @@ ul.footnav a{
         width: 90%
     }
     .perf_group{
-        width: 25%;
+        width: 30%;
         height: 70%;
     }
     /* News */
@@ -917,10 +926,31 @@ ul.footnav a{
         background: white;
         z-index: 10;
     }
+    .mapH1>.container{
+        display: flex;
+        align-items: flex-end;
+    }
 }
 @media screen and (max-width: 550px){
     .container{
         width: 360px;
+    }
+    .menu_open{
+        width: 80px;
+    }
+    .body{
+        width: 100%;
+    }
+    .presentVegaWight{
+        display: block;
+    }
+    .presentVega{
+        margin: 0;
+        padding-top: 40px;
+        width: 90%;
+       font-style: normal;
+        font-weight: bold;
+        font-size: 32px; 
     }
    .social_buttons2>img{
         display: block;
@@ -939,7 +969,7 @@ ul.footnav a{
         width: 320px;
     }
     .header_inner{
-        width: 100%;
+        max-width: 100%;
     }
     .header_inner>.container{
        margin: auto;
@@ -974,9 +1004,8 @@ ul.footnav a{
         display: flex;
         align-items: center;
     }
-    .performance>.container{
+    .performance{
         display: block;
-        height: 0%;
     }
     .perf_group{
         margin: 0;
@@ -995,14 +1024,13 @@ ul.footnav a{
         height: 100%;
     }
     .beton{
-        height: 900px;
+        height: 1000px;
     }
     .BetonMaterial{
         display: block;
     }
     .materialBeton1, .materialBeton2, .materialBeton3{
-        width: 328px;
-        height: 220px;
+        width: 100%;
         margin-bottom: 15px;
     }
     .newsImages, .newsImages2{
@@ -1038,6 +1066,7 @@ ul.footnav a{
     }
     .worksbackground{
         height: 1400px;
+        width: 100%
     }
     .workscontent{
         height: 100%;
@@ -1049,7 +1078,6 @@ ul.footnav a{
         margin-top: 10px;
     }
      .footer-section>.container{
-        margin-left: 20px;
         display: block;
     }
     .FooterMainContent>.container{
@@ -1082,5 +1110,19 @@ ul.footnav a{
         height: 50px;
         margin-top: 30px;
         font-size: 16px;
+    }
+}
+@media screen and (max-width: 375px){
+    .container{
+        width: 360px;
+    }
+    .body{
+        width: 100%;
+    }
+    .header_inner{
+        max-width: 100%;
+    }
+    .imgphone{
+        margin-right: 100px;
     }
 }
