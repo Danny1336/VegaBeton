@@ -843,7 +843,8 @@ ul.footnav a{
         left: 0;
         top: 80px;
         width: 60%;
-        height: 750px;
+        height: 70%;
+        padding-bottom: 10px;
         background: white;
     }
   
