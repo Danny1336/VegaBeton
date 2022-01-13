@@ -836,6 +836,7 @@ ul.footnav a{
         bottom: 20px;
     }
     .burger_menu{
+        overflow: scroll;
         font-weight: bold;
         font-size: 18px;
         position: fixed;
